@@ -2,7 +2,6 @@ package solcparser
 
 import (
 	"encoding/json"
-	"fmt"
 	"reflect"
 	"testing"
 )
@@ -2376,7 +2375,6 @@ func TestParser(t *testing.T) {
 
 func testSolidityCase(t *testing.T, cases parserCase) {
 	for indx, c := range cases {
-		fmt.Println("-----------------")
 		if !reflect.DeepEqual(c.result, c.code) {
 
 			print := func(c interface{}) {
@@ -2391,7 +2389,6 @@ func testSolidityCase(t *testing.T, cases parserCase) {
 			print(c.code)
 			print(c.result)
 			t.Fatalf("bad %d", indx)
-
 		}
 	}
 }
