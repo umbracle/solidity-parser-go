@@ -1,0 +1,3 @@
+[submodule "antlr-sol"]
+	path = antlr-sol
+	url = https://github.com/solidity-parser/antlr
