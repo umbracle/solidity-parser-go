@@ -12,8 +12,6 @@ import (
 
 // exampleListener is an event-driven callback for the parser.
 type exampleListener struct {
-	// *solAntlr.BaseSolidityListener
-
 	service reflect.Value
 	funcMap map[string]*funcData
 }
