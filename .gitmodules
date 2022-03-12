@@ -1,3 +1,6 @@
 [submodule "antlr-sol"]
 	path = antlr-sol
 	url = https://github.com/solidity-parser/antlr
+[submodule "tree-sitter-sol"]
+	path = tree-sitter-sol
+	url = https://github.com/JoranHonig/tree-sitter-solidity

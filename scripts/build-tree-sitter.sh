@@ -4,11 +4,11 @@
 dir=tree-sitter-src
 mkdir -p $dir
 
-cd $dir && tree-sitter generate ../tree-sitter/grammar.js
+cd $dir && tree-sitter generate ../tree-sitter-sol/grammar.js
 cd ..
 
 # Create go bindings
-godir=tree-sitter-go
+godir=tree-sitter
 mkdir -p $godir/tree_sitter
 
 cp $dir/src/parser.c $godir
